@@ -24,6 +24,8 @@ function App() {
     const adoptedPet = pets.find((pet) => pet.id === petId)
     console.log(adoptedPet)
     adoptedPet.isAdopted = true
+    const updatedPets = [...pets, adoptedPet]
+    setPets(updatedPets)
   }
 
   return (

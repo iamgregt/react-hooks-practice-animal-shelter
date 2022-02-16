@@ -4,7 +4,7 @@ function Filters({onChangeType, onFindPetsClick}) {
 
   function handleFilterChange(e){
     console.log(e.target.value)
-    onChangeType(e.target.value)
+    onChangeType({type: e.target.value})
   }
 
 
